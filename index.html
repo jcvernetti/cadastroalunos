@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>ESCOLA XPTO</title>
+</head>
+<body>
+    <!--Uma tela para cadastro de alunos da escola XPTO, tendo os seguintes campos:
+        [10:42 AM]
+        *Nome, *Sobrenome, *Data Nascimento, Endereço,  *Nome da Mae, Nome do Pai, Email, Série atual(Nível de alfabetização).
+        NEW
+        [10:42 AM]
+        Botões Submeter, Reset-->
+        <h1><center>ESCOLA XPTO</center></h1>        
+        <form action="" method="GET" ">
+            <fieldset>
+                <legend>Cadastro de Aluno</legend>
+                <!-- Nome -->
+                <label for="idNomeAluno">Nome:</label>
+                <input type="text" id="idNomeAluno" name="nmNomeAluno" maxlength="15" size="15" placeholder="Nome">
+    
+                <!-- Sobrenome -->
+                <label for="idText">Sobrenome:</label>
+                <input type="text" id="idText" name="nmText" maxlength="15" size="15" placeholder="Sobrenome">
+    
+                <!-- Data Nascimento -->
+                <br><br>
+                <label for="idDate">Data Nascimento:</label>
+                <input type="date" id="idDate" name="nmDate" min="2016-01-01" value="2021-08-03">
+
+                <!-- Idade -->
+                <label for="idIdade">Idade:</label>
+                <input type="number" id="idIdade" name="nmIdade" min="0" max="10" step="1"  >  
+                
+                <!-- Sexo -->
+                <br><br>
+                <label for="idSexo">Sexo:</label>
+                <br>
+                <input type="radio" id="idRadio1" name="nmRadio" >
+                <label for="idRadio1">Masculino</label>
+                <br>
+                <input type="radio" id="idRadio2" name="nmRadio">
+                <label for="idRadio2">Feminino</label> 
+
+                <!-- Nível de alfabetização -->
+                <br><br>
+                <label for="idSerieAtual">Nível de alfabetização:</label>
+                <input type="text" id="idSerieAtual" name="nmSerieAtual" maxlength="30" size="30" placeholder="Série Atual">
+
+            </fieldset>
+
+            <br>
+            <fieldset>
+                <legend>Filiação</legend>
+                <!-- Nome da mãe -->
+                <label for="idMae">Nome completo da mãe:</label>
+                <input type="text" id="idMae" name="nmMae" maxlength="30" size="30" placeholder="Nome e sobrenome">
+
+                <!-- Nome do pai -->
+                <label for="idPai">Nome completo do pai:</label>
+                <input type="text" id="idPai" name="nmPai" maxlength="30" size="30" placeholder="Nome e sobrenome">
+            </fieldset>   
+
+            <br>
+            <fieldset>
+                <legend>Dados para contato</legend>
+                
+                <!-- Telefone -->
+                <label for="idTel">Telefone:</label>
+                <input type="tel" id="idTel" name="nmTel" placeholder="+55 (47)3214-3211" pattern="[0-9]{2}[0-9]{2}[0-9]{4}-[0-9]{4}">
+
+                <!-- Email -->
+                
+                <label for="idEmail">E-mail:</label>
+                <input type="email" id="idEmail" name="nmEmail" >
+
+                <!-- Endereço -->
+                
+                <label for="idEndereco">Endereço:</label>
+                <input type="endereco" id="idEndereco" name="nmEndereco" >
+
+            </fieldset> 
+
+            <br>
+            <fieldset>
+                <!-- Botoes -->
+                <input type="submit" id="idBtSubmit" value="Salvar">
+                <input type="reset" id="idBtReset" value="Limpar Tela">
+                
+            </fieldset>
+            <br><br>
+        </form>
+</body>
+</html>
