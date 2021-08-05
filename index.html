@@ -4,7 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>ESCOLA XPTO</title>
+    <!--<title>ESCOLA XPTO</title> -->
+    <style>
+      .cmae{
+          font-style: italic;
+      }
+      .cpai{
+          font-style: oblique;
+      }
+      #firstfieldset{
+           background-color: rgb(248, 244, 244);
+       }
+       #secondfieldset{
+           background-color: rgb(202, 209, 209);
+       }
+       #idh1Titulo{
+            text-align: center;
+            color: red;
+        }
+        
+        .clegend {
+            font-size: large;
+            font-weight: bold;
+        }
+         
+
+    </style>
 </head>
 <body>
     <!--Uma tela para cadastro de alunos da escola XPTO, tendo os seguintes campos:
@@ -13,17 +38,17 @@
         NEW
         [10:42 AM]
         Botões Submeter, Reset-->
-        <h1><center>ESCOLA XPTO</center></h1>        
+        <h1 id="idh1Titulo"><center>ESCOLA XPTO</center></h1>        
         <form action="" method="GET" ">
-            <fieldset>
-                <legend>Cadastro de Aluno</legend>
+            <fieldset id="firstfieldset">
+                <legend class="clegend">Cadastro de Aluno</legend>
                 <!-- Nome -->
                 <label for="idNomeAluno">Nome:</label>
-                <input type="text" id="idNomeAluno" name="nmNomeAluno" maxlength="15" size="15" placeholder="Nome">
+                <input type="text" id="idNomeAluno" name="nmNomeAluno" maxlength="15" size="15"  required >
     
                 <!-- Sobrenome -->
                 <label for="idText">Sobrenome:</label>
-                <input type="text" id="idText" name="nmText" maxlength="15" size="15" placeholder="Sobrenome">
+                <input type="text" id="idText" name="nmText" maxlength="15" size="15" required>
     
                 <!-- Data Nascimento -->
                 <br><br>
@@ -52,20 +77,20 @@
             </fieldset>
 
             <br>
-            <fieldset>
-                <legend>Filiação</legend>
+            <fieldset id="secondfieldset">
+                <legend class="clegend">Filiação</legend>
                 <!-- Nome da mãe -->
-                <label for="idMae">Nome completo da mãe:</label>
+                <label class="cmae" for="idMae">Nome completo da mãe:</label>
                 <input type="text" id="idMae" name="nmMae" maxlength="30" size="30" placeholder="Nome e sobrenome">
-
+                <br>
                 <!-- Nome do pai -->
-                <label for="idPai">Nome completo do pai:</label>
+                <label class="cpai" for="idPai">Nome completo do pai:</label>
                 <input type="text" id="idPai" name="nmPai" maxlength="30" size="30" placeholder="Nome e sobrenome">
             </fieldset>   
 
-            <br>
+            <br> 
             <fieldset>
-                <legend>Dados para contato</legend>
+                <legend class="clegend">Dados para contato</legend>
                 
                 <!-- Telefone -->
                 <label for="idTel">Telefone:</label>
@@ -84,9 +109,9 @@
             </fieldset> 
 
             <br>
-            <fieldset>
+            <fieldset class="testa">
                 <!-- Botoes -->
-                <input type="submit" id="idBtSubmit" value="Salvar">
+                <input class="cxbuttons" type="submit" id="idBtSubmit" value="Salvar">
                 <input type="reset" id="idBtReset" value="Limpar Tela">
                 
             </fieldset>
