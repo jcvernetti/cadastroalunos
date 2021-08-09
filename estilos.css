@@ -1,0 +1,21 @@
+.cmae{
+    font-style: italic;
+}
+.cpai{
+    font-style: oblique;
+}
+#firstfieldset{
+     background-color: rgb(248, 244, 244);
+ }
+ #secondfieldset{
+     background-color: rgb(202, 209, 209);
+ }
+ #idh1Titulo{
+      text-align: center;
+      color: red;
+  }
+  
+  .clegend {
+      font-size: large;
+      font-weight: bold;
+  }
